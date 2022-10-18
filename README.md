@@ -1,5 +1,5 @@
 <!-- #region -->
-# climate_HMA_course
+# Climate_HMA_course
 
 Computing climate trends in the Himalaya Mountain Area with the CRU temperature dataset
 
