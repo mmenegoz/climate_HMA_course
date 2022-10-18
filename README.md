@@ -10,7 +10,7 @@ The students can use this binder session to create a python notebook to compute 
 
 **Topography data: [http://research.jisao.washington.edu/data_sets/elevation/](http://research.jisao.washington.edu/data_sets/elevation/elev.0.25-deg.nc)** (October 2022)
 
-[![Binder](https://mybinder.org/badge_logo.svg)]https://hub.gke2.mybinder.org/user/mmenegoz-climate_hma_course-genqi7jk/doc/tree/HMA_climate_trends.ipynb
+[![Binder](https://mybinder.org/badge_logo.svg)](https://hub.gke2.mybinder.org/user/mmenegoz-climate_hma_course-genqi7jk/doc/tree/HMA_climate_trends.ipynb)
 
 1. General description:
 
