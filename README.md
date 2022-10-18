@@ -1,5 +1,6 @@
 <!-- #region -->
-# M2_climat_MAR
+# climate_HMA_course
+
 Computing climate trends in the Himalaya Mountain Area with the CRU temperature dataset
 
 This folder contain the french course from Martin Ménégoz, about climate modelling activities over mountainous areas.
