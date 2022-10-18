@@ -5,4 +5,5 @@
 
 wget --user-agent Mozilla/4.0 '' -O HMA_data.tgz
 tar xzvf HMA_data.tgz
+gunzip reduced_asia_cru_ts4.06.1901.2021.tmp.dat.nc.gz
 rm HMA_data.tgz
