@@ -4,12 +4,11 @@ Computing climate trends in the Himalaya Mountain Area with the CRU temperature 
 
 This folder contain the french course from Martin Ménégoz, about climate modelling activities over mountainous areas.
 
-The students can use this binder session to create a python notebook to compute seasonal trends of temperature and precipitation over the Alps, using the MAR data available at:
+The students can use this binder session to create a python notebook to compute seasonal trends of temperature, using the data available at:
 
 **Temperature data: https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz** (October 2022)
 
 **Topography data: http://research.jisao.washington.edu/data_sets/elevation/** (October 2022)
-
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmenegoz/M2_climat_MAR/HEAD)
 
