@@ -12,6 +12,8 @@ The students can use this binder session to create a python notebook to compute 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmenegoz/climate_HMA_course/HEAD?labpath=https%3A%2F%2Fgithub.com%2Fmmenegoz%2Fclimate_HMA_course%2Fblob%2Fmain%2FHMA_climate_trends.ipynb)
 
+https://hub.gke2.mybinder.org/user/mmenegoz-climate_hma_course-genqi7jk/doc/tree/HMA_climate_trends.ipynb
+
 1. General description:
 
 Downloading CRU data to investigate climate trends over the HMA.
