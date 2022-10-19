@@ -13,9 +13,9 @@ The students can use this binder session to create a python notebook to compute 
 
 A reduced version of the CRU dataset is available at: https://filesender.renater.fr/?s=download&token=1f0c251e-096f-4038-b5c0-4f3a7b10f46c
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmenegoz/climate_HMA_course/HEAD)
+Launch the binder session:
 
-(First test: https://hub.gke2.mybinder.org/user/mmenegoz-climate_hma_course-genqi7jk/)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmenegoz/climate_HMA_course/HEAD)
 
 1. General description:
 
