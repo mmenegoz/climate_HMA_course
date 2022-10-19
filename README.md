@@ -9,7 +9,7 @@ The students can use this binder session to create a python notebook to compute 
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmenegoz/climate_HMA_course/HEAD)
 
-If you want to run the script on your own machine, you can download the github repository, and use the script *ipynb (or *py if you preefer).
+If you want to run the script on your own machine, you can download the github repository, and use the script *ipynb (or *py if you prefer).
 
 Then, you can download the data available at:
 
