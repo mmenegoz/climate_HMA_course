@@ -5,24 +5,27 @@ Computing climate trends in the Himalaya Mountain Area with the CRU temperature 
 
 This folder contain the french course from Martin Ménégoz, about climate modelling activities over mountainous areas.
 
-The students can use this binder session to create a python notebook to compute seasonal trends of temperature, using the data available at:
-
-**A reduced version of the CRU dataset is available at: https://filesender.renater.fr/?s=download&token=1f0c251e-096f-4038-b5c0-4f3a7b10f46c** (available until November, the 3rd)
-as well as a direct link to copy **the surface elevation dataset: https://filesender.renater.fr/?s=download&token=c274a574-1116-44d7-878d-b74e33258f3d** (available until November, the 3rd)
-
-**Origina data**
-**Temperature data: https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz** (October 2022)
-
-**Topography data: [http://research.jisao.washington.edu/data_sets/elevation/](http://research.jisao.washington.edu/data_sets/elevation/elev.0.25-deg.nc)** (October 2022)
-
-Launch the binder session:
+The students can use this binder session to create a python notebook to compute seasonal trends of temperature, just clicking there:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmenegoz/climate_HMA_course/HEAD)
 
-1. General description:
+If you want to run the script on your own machine, you can download the github repository, and use the script *ipynb (or *py if you preefer).
 
-Downloading CRU data to investigate climate trends over the HMA.
-For this we will use several classic Python packages:
+Then, you can download the data available at:
+
+**Reduced version of the CRU dataset: https://filesender.renater.fr/?s=download&token=1f0c251e-096f-4038-b5c0-4f3a7b10f46c** (available until November, the 3rd)
+
+**Surface elevation dataset: https://filesender.renater.fr/?s=download&token=c274a574-1116-44d7-878d-b74e33258f3d** (available until November, the 3rd)
+
+The Origina data gloibally available can be downloaded at:
+
+Temperature data: https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz (October 2022)
+
+Topography data: [http://research.jisao.washington.edu/data_sets/elevation/](http://research.jisao.washington.edu/data_sets/elevation/elev.0.25-deg.nc) (October 2022)
+
+**General description of this github repository:**
+
+1. Python packages
 
     xarray: is an open-source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun! (Xarray Tutorial / Xarray | SciPy 2020)
     jupyter: for using jupyter-notebook / lab
@@ -35,8 +38,6 @@ Check the Environment section at the end of this README if you want to know more
 2. Script
 
 HMA_climate_trends.ipynb is a basic script from which you can start working on the CRU data with python libraries.
-
-The package https://zenodo.org/record/4458780#.YeSjVGAo_OQ could be used to compute the statistical significance of the trends with the Mann Kendall criteria with more efficiency.
 
 3. Environment
 
