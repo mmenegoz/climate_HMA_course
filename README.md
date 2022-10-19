@@ -17,7 +17,7 @@ Then, you can download the data available at:
 
 **Surface elevation dataset: https://filesender.renater.fr/?s=download&token=c274a574-1116-44d7-878d-b74e33258f3d** (available until November, the 3rd)
 
-The Origina data gloibally available can be downloaded at:
+The Origina data globally available can be downloaded at:
 
 Temperature data: https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz (October 2022)
 
