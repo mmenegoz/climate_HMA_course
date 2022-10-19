@@ -8,9 +8,9 @@
 #       format_version: '1.5'
 #       jupytext_version: 1.14.0
 #   kernelspec:
-#     display_name: Python 3 (ipykernel)
+#     display_name: Python [conda env:HMA_env] *
 #     language: python
-#     name: python3
+#     name: conda-env-HMA_env-py
 # ---
 
 # **High-Mountain Asia climate analysis based on gridded observations**
@@ -21,11 +21,6 @@
 
 # **1. Environment**
 
-# +
-# To reload external files automatically (ex: utils)
-# %load_ext autoreload
-# %autoreload 2
-
 import xarray as xr
 import pandas as pd
 import numpy as np
@@ -34,26 +29,32 @@ import matplotlib.pyplot as plt
 import proplot as plot # New plot library (https://proplot.readthedocs.io/en/latest/)
 plot.rc['savefig.dpi'] = 300 # 1200 is too big! #https://proplot.readthedocs.io/en/latest/basics.html#Creating-figures
 from scipy import stats
-
-# Import some extra functions from utils folder
-import sys
-sys.path.insert(1, 'utils') # to include the util directory
-import utils as u # my personal functions
-u.check_python_version()
-u.check_virtual_memory()
-
-# Library not used here
-#import dask
-#import xesmf as xe # For regridding (https://xesmf.readthedocs.io/en/latest/)
-#from scipy.interpolate import griddata # Other package for regridding
-# -
+import os
+from tqdm import tqdm
 
 # Where are the data files?
-path="/Users/mmenegoz/cours/nepal_2022/"
+path="data/"
 
-# Domain study
+# Domain study: HMA
 lon1=60;lon2=110
 lat1=25;lat2=45
+
+# **2. Open temperature data file (CRU)**
+
+# CRU dataset (https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz)
+# https://www.nature.com/articles/s41597-020-0453-3
+# Here we download only a part of the file
+file='HMA_cru_ts4.06.1901.2021.tmp.dat.nc'
+ds = xr.open_dataset(os.path.join(path,file))
+ds
+
+# **3. Extracting regional data and computing seasonal means**
+
+# Extracting the data over HMA
+longitudes=slice(lon1,lon2)
+latitudes=slice(lat1,lat2)
+temp_HMA=ds.sel(lat=latitudes,lon=longitudes)
+temp_HMA
 
 
 # function for seasonal mean
@@ -73,29 +74,13 @@ def season_mean(ds, calendar="standard"):
     return (ds * weights).groupby("time.season").sum(dim="time")
 
 
-# **2. Open temperature data file (CRU)**
-
-# CRU dataset (https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz)
-# https://www.nature.com/articles/s41597-020-0453-3
-file='cru_ts4.06.1901.2021.tmp.dat.nc'
-ds = xr.open_dataset(path+file)
-ds
-
-# **3. Extracting regional data and computing seasonal means**
-
-# Extracting the data over HMA
-longitudes=slice(lon1,lon2)
-latitudes=slice(lat1,lat2)
-temp_HMA=ds.sel(lat=latitudes,lon=longitudes)
-temp_HMA
-
 # Computing seasonal mean and ordering properly the seasons
 seasonal_mean=season_mean(temp_HMA.tmp).sortby(xr.DataArray(['DJF','MAM','JJA', 'SON'],dims=['season']))
 
 seasonal_mean.shape
 
 # Levels of temperature for the plot
-levels=np.arange(-26,28,2)
+levels=plot.arange(-34,34,2)
 
 # +
 # Producing the map of the seasonal mean, excluding the borders of the domain.
@@ -170,6 +155,8 @@ seasonal_T_loc.shape
 index=np.arange(0,dates.shape[0])
 index.shape
 
+pvalue_T_loc
+
 # +
 #Plotting temperature timeseries
 f, axs = plot.subplots(ncols=2, nrows=2)
@@ -182,7 +169,8 @@ for i, ax in enumerate(axs):
         signif='dashed'
     m = ax.scatter(dates,seasonal_T_loc[:,i]-np.mean(seasonal_T_loc[:,i]))
     m = ax.plot(dates,intercept_T_loc[i]+slope_T_loc[i]*index-np.mean(seasonal_T_loc[:,i]),linestyle=signif)
-    ax.format(title=seasonal_mean.season.data[i]+' trend='+str(round(slope_T_loc[i]*10,2))+'°C.decade-1; '+'pvalue='+str(round(pvalue_T_loc[i],3)),large='10px')
+    ax.format(title=f"{seasonal_mean.season.data[i]} trend={slope_T_loc[i]*10:.2f}°C.decade-1; pvalue={pvalue_T_loc[i]:.2g}",large='10px')
+    #ax.format(title=seasonal_mean.season.data[i]+' trend='+str(round(slope_T_loc[i]*10,2))+'°C.decade-1; '+'pvalue='+str(round(pvalue_T_loc[i],3)),large='10px')
 
 axs.format(
     suptitle='Seasonal temperature at lon='+str(lon_loc)+' lat='+str(lat_loc),
@@ -208,22 +196,26 @@ seasonal_T [:,1,:,:] = Temp.where(Temp['time.season'] == 'MAM').groupby('time.ye
 seasonal_T [:,2,:,:] = Temp.where(Temp['time.season'] == 'JJA').groupby('time.year').mean(dim='time')
 seasonal_T [:,3,:,:] = Temp.where(Temp['time.season'] == 'SON').groupby('time.year').mean(dim='time')
 
+seasonal_T.shape[3]
+
+# +
 # Computing trends
 slope_T=np.full(seasonal_T.shape[1:4],np.nan)
 pvalue_T=np.full(seasonal_T.shape[1:4],np.nan)
-for lon in range(seasonal_T.shape[3]):
-    print('longitude='+str(lon)+'/'+str(seasonal_T.shape[3]))
+
+for lon in tqdm(range(100)):
     for lat in range(seasonal_T.shape[2]):
         for season in range(4):
             linregress_T = stats.linregress(range(seasonal_T.shape[0]-1), seasonal_T[1:,season,lat,lon])
             slope_T[season][lat][lon] = linregress_T.slope
             pvalue_T[season][lat][lon] = linregress_T.pvalue
+# -
 
 # Masking non-significative signals
 signif=np.where(pvalue_T<0.05,True,False)
 
 # Levels of temperature for the plot
-levels=np.arange(-0.5,0.5,0.05)
+levels=plot.arange(-0.3,0.3,0.05)
 factor=10 # degree per decade
 
 # +
@@ -246,7 +238,7 @@ for i, ax in enumerate(axs):
     hatches=["", "."], alpha=0
     )
     
-f.colorbar(m, label= '°C')
+f.colorbar(m, label= '°C.decade-1')
 
 axs.format(
     geogridlinewidth=0.1, geogridcolor='gray8', geogridalpha=0.5, labels=True, 
@@ -265,7 +257,7 @@ axs.format(
 # Topography at 0.25° (http://research.jisao.washington.edu/data_sets/elevation/)
 # -> 0.25-degree latitude-longitude resolution elevation (TBASE)
 file_topo="elev.0.25-deg.nc"
-ds_topo = xr.open_dataset(path+file_topo)
+ds_topo = xr.open_dataset(os.path.join(path,file_topo))
 ds_topo # ds_topo as dataset
 
 # Extracting the data over HMA
@@ -298,11 +290,6 @@ trends_high=np.zeros(slope_T.shape)
 for i in np.arange(4):
     trends_high[i,:,:]=np.where(ds_topo_HMA_out.data > limit,slope_T[i,:,:],np.nan)
 
-fig, ax = plt.subplots()
-m=ax.pcolormesh(topo_high)
-fig.colorbar(m,label= 'm.asl')
-ax.set_title('Topography TBASE interpolated on a 0.5° resolution, masking area above '+str(limit)+'m asl')
-
 # +
 #Plotting trends as a function of elevation
 f, axs = plot.subplots(ncols=2, nrows=2,share=1)
@@ -319,12 +306,10 @@ for i, ax in enumerate(axs):
 
 axs.format(
     suptitle='Temperature trend as a function of the topography',
-    xlabel='Elevation',
+    xlabel='Elevation (m. asl)',
     ylabel='trends (°C.decade-1)',
     large='15px'
 )
 # -
-
-
 
 

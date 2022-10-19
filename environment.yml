@@ -28,3 +28,4 @@ dependencies:
   - jupyter
   - gcsfs # Google Cloud (for intake-esm)
   - zarr # similar to netCDF but more performant (for intake also)
+  - tqdm=4.64.1 # Progression bar in loops
