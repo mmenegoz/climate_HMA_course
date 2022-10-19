@@ -27,11 +27,11 @@ Topography data: [http://research.jisao.washington.edu/data_sets/elevation/](htt
 
 1. Python packages
 
-    xarray: is an open-source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun! (Xarray Tutorial / Xarray | SciPy 2020)
-    jupyter: for using jupyter-notebook / lab
-    matplotlib: back-end for making plots
-    cartopy: replace basemap, back-end for map projections
-    proplot: a lightweight matplotlib wrapper for making beautiful, publication-quality graphics (still in development)
+- [xarray](http://xarray.pydata.org/en/stable/): is an open-source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun! ([Xarray Tutorial](https://xarray-contrib.github.io/xarray-tutorial/) / [Xarray | SciPy 2020](https://www.youtube.com/watch?v=mecN-Ph_-78&list=PLYx7XA2nY5Gde-6QO98KUJ9iL_WW4rgYf&index=4))
+- [jupyter](https://jupyter.org/): for using jupyter-notebook / lab
+- [matplotlib](https://matplotlib.org/): back-end for making plots
+- [cartopy](https://scitools.org.uk/cartopy/docs/latest/): replace basemap, back-end for map projections
+- [proplot](https://proplot.readthedocs.io/en/stable/): a lightweight matplotlib wrapper for making beautiful, publication-quality graphics (still in development)
 
 Check the Environment section at the end of this README if you want to know more about the environment and/or to install it on your local machine.
 
