@@ -13,9 +13,9 @@ If you want to run the script on your own machine, you can download the github r
 
 Then, you can download the data available at:
 
-**Reduced version of the CRU dataset: https://filesender.renater.fr/?s=download&token=1f0c251e-096f-4038-b5c0-4f3a7b10f46c** (available until November, the 3rd)
+**Reduced version of the CRU dataset: https://filesender.renater.fr/?s=download&token=e4b6928b-bd15-43cb-9cdd-238ed39842d7** (available until January, the 17th)
 
-**Surface elevation dataset: https://filesender.renater.fr/?s=download&token=c274a574-1116-44d7-878d-b74e33258f3d** (available until November, the 3rd)
+**Surface elevation dataset: https://filesender.renater.fr/?s=download&token=863294df-3c3f-40d8-945a-55400710e8dc** (available until January, the 17th)
 
 The Origina data globally available can be downloaded at:
 
