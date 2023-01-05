@@ -5,7 +5,7 @@ Computing climate trends in the Himalaya Mountain Area with the CRU temperature 
 
 This folder contain the french course from Martin Ménégoz, about climate modelling activities over mountainous areas.
 
-The students can use this binder session to create a python notebook to compute seasonal trends of temperature, just clicking there:
+The students can use this binder session to create a python notebook to compute seasonal trends of temperature, using the script HMA_climate_trends.ipynb, just clicking there:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmenegoz/climate_HMA_course/HEAD)
 
