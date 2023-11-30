@@ -9,7 +9,7 @@ You can download this repository by using the commande git clone https://github.
 
 **General description of this github repository:**
 
-* This Reamde.md file.
+* This Readme.md file.
 
 * Document of the course: menegoz_climate_models_nepal_2023.pdf
 
@@ -63,6 +63,7 @@ The Origina data globally available can be downloaded at: https://crudata.uea.ac
 The IPSL-CM6A-LR model have been used to simulate the global climate system over 1850-2014 (historical experiment) and in future projections extended unntil 2100 and following different emission scenarios. The model is described in Boucher et al. (2020, available [online](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS002010)). Here, one subset extracted over HMA is available for the historical period and in one future projection available over 2014-20100 under the SSP2_45 scenario. For this short training, only one member is provided (r1i1p1f1), availablefor in two files for the two experiments on the [UGA cloud climate data IPSL repository](https://cloud.univ-grenoble-alpes.fr/apps/files/?dir=/2023_TU_winter_school/Data/05_climate/IPSL_r1i1p1f1&fileid=792576253):
 
 HMA_tas_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc
+
 HMA_tas_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc
 
 Please, consider that the original data is a 32-member ensemble experiment than can be used to investigate the uncertainties related to climate internal variability inherent to the global climate system.
