@@ -10,6 +10,7 @@ This folder contain the french course from Martin Ménégoz, about climate model
 You can download this repository by using the commande git clone https://github.com/mmenegoz/climate_HMA_course.git
 
 1. Document of the course: menegoz_climate_models_nepal_2023.pdf
+----------------------------------------------------------------
 
 2. A Script to do the training, aiming at computing temperature trends in HMA: HMA_climate_trends_CRU.ipynb
 
