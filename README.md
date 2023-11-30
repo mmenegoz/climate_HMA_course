@@ -74,6 +74,10 @@ Please, consider that the original data is a 32-member ensemble experiment than 
 
 *Commands*
 
+To check existing environments
+
+	conda info --envs
+
 To install the environement on your machine, you can do it with:
 
 	mamba env create -f environment_2023.yml
