@@ -7,13 +7,22 @@ This folder contain the french course from Martin Ménégoz, about climate model
 
 **General description of this github repository:**
 
-1. Document of the course: 
+You can download this repository by using the commande git clone https://github.com/mmenegoz/climate_HMA_course.git
+
+1. Document of the course: menegoz_climate_models_nepal_2023.pdf
 
 2. A Script to do the training, aiming at computing temperature trends in HMA: HMA_climate_trends_CRU.ipynb
 
 See the sections below to download the data, install your environment and run the script
 
-3. Data
+Steps during the 13/12/2023 training:
+-------------------------------------
+
+2.1: launch and run the script HMA_climate_trends_CRU.ipynb
+
+2.2 Copy this script and adapt it yourself to compute tas trend over historical (1850-2014) and futur (2014-2020) periods
+
+3. Data (downloadable on the UGA cloud).
 
 The data used in this training is:
 
@@ -42,7 +51,7 @@ HMA_tas_Amon_IPSL-CM6A-LR_ssp245_r1i1p1f1_gr_201501-210012.nc
 
 Please, consider that the original data is a 32-member ensemble experiment than can be used to investigate the uncertainties related to climate internal variability inherent to the global climate system.
 
-4. Python environment and package
+4. Python environment and main packages
 
 To install the environement on your machine, you can do it with:
 
@@ -55,8 +64,6 @@ conda env create -f environment_2023.yml
 Then, activate your environment. Some details about conda environments and python packages used in this tutorial are described below.
 
 **Python environement details**
-
-2. Python packages
 
 - [xarray](http://xarray.pydata.org/en/stable/): is an open-source project and Python package that makes working with labelled multi-dimensional arrays simple, efficient, and fun! ([Xarray Tutorial](https://xarray-contrib.github.io/xarray-tutorial/) / [Xarray | SciPy 2020](https://www.youtube.com/watch?v=mecN-Ph_-78&list=PLYx7XA2nY5Gde-6QO98KUJ9iL_WW4rgYf&index=4))
 - [jupyter](https://jupyter.org/): for using jupyter-notebook / lab
