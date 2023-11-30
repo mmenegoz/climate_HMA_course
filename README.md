@@ -18,9 +18,10 @@ See the sections below to download the data, install your environment and run th
 Steps during the 13/12/2023 training:
 -------------------------------------
 
-2.1: launch and run the script HMA_climate_trends_CRU.ipynb
+2.1 Launch and run the script HMA_climate_trends_CRU.ipynb
 
 2.2 Copy this script and adapt it yourself to compute tas trend over historical (1850-2014) and futur (2014-2020) periods
+
 
 3. Data (downloadable on the UGA cloud).
 
@@ -32,17 +33,17 @@ The data used in this training is:
 
 Documentation and repositories related to these data are described below.
 
-**CRU temperature dataset
+*CRU temperature dataset*
 
 A subset of the data over HMA can be downloaded on the [UGA cloud climate repository](https://cloud.univ-grenoble-alpes.fr/apps/files/?dir=/2023_TU_winter_school/Data/05_climate/CRU&fileid=792557848) in the file HMA_cru_ts4.06.1901.2021.tmp.dat.nc
 
 The Origina data globally available can be downloaded at: https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz (October 2022)
 
-**Topography data (global data)
+*Topography data (global data)*
 
 [UGA cloud dem GEMTED repository](https://cloud.univ-grenoble-alpes.fr/apps/files/?dir=/2023_TU_winter_school/Data/03_dem/GMTED2010&fileid=792549724), original data available at [GMTED2010](https://www.temis.nl/data/gmted2010/index.php) (December 2023)
 
-**IPSL GCM experiments; temperature data (tas)
+*IPSL GCM experiments; temperature data (tas)*
 
 The IPSL-CM6A-LR model have been used to simulate the global climate system over 1850-2014 (historical experiment) and in future projections extended unntil 2100 and following different emission scenarios. The model is described in Boucher et al. (2020, available [online](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS002010)). Here, one subset extracted over HMA is available for the historical period and in one future projection available over 2014-20100 under the SSP2_45 scenario. For this short training, only one member is provided (r1i1p1f1), availablefor in two files for the two experiments on the [UGA cloud climate data IPSL repository](https://cloud.univ-grenoble-alpes.fr/apps/files/?dir=/2023_TU_winter_school/Data/05_climate/IPSL_r1i1p1f1&fileid=792576253):
 
