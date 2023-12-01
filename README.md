@@ -32,7 +32,7 @@ Steps during the 13/12/2023 training:
 
 3. Launch and run the script HMA_climate_trends_CRU.ipynb
 
-4. Copy this script and adapt it yourself to compute tas trend over historical (1850-2014) and futur (2014-2020) periods with the GCM outputs
+4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and futur (2014-2020) periods with the GCM outputs (variable tas)
 
 You will need to change the names of some files/variables and to adapt the date corresponding to the new dataset.
 
