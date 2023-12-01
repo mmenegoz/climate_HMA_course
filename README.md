@@ -28,7 +28,7 @@ Steps during the 13/12/2023 training:
 
 1. Copy the three datasets described below on your machine.
 
-2. Create your python environment (or use those that you got from the previous python sessions)
+2. Create your python environment (or use those that you got from the previous python sessions), and activate this environment before launching the notebook (e.g. with jupyter-lab)
 
 3. Launch and run the script HMA_climate_trends_CRU.ipynb
 
