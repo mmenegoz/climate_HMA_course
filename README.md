@@ -1,5 +1,5 @@
 <!-- #region -->
-# Climate_HMA_course
+# Climate_HMA_course, Katmandhu, December 2023
 
 Computing climate trends of surface temperature in the Himalaya Mountain Area with observations and General Circulation Model (GCM) outputs over the last century and in future projections.
 
