@@ -7,6 +7,8 @@ This folder contain the french course from Martin Ménégoz, about climate model
 
 You can download this repository by using the commande git clone https://github.com/mmenegoz/climate_HMA_course.git
 
+For the 2023 UGA master students, please use the branch binder_2023.
+
 **General description of this github repository:**
 
 * This Readme.md file.
@@ -19,22 +21,30 @@ This script allows to compute temperature trends in HMA. See the sections below 
 
 * A python environment file: environment.yml
 
-* The files needed to launch a binder session
+* The files needed to launch a binder session after downloading the data (postBuild and download_data.sh)
 
 -----------------------------------------------------------------------
 
-Steps during the 13/12/2023 training:
--------------------------------------
+Steps during the 6/12/2023 training (M2 Students):
+--------------------------------------------------
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/
+1. Create a jupyter notebook python session:
 
-1. Copy the three datasets described below on your machine.
+**Two options:**
 
-2. Create your python environment (or use those that you got from the previous python sessions), and activate this environment before launching the notebook (e.g. with jupyter-lab)
+**A.** A binder session with the data online:
 
-3. Launch and run the script HMA_climate_trends_CRU.ipynb
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmenegoz/climate_HMA_course/binder_2023)
 
-4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and futur (2014-2020) periods with the GCM outputs (variable tas)
+**B.** Run the script on your own machine:
+
+B1. Copy the three datasets described below on your machine.
+
+B2. Create your python environment and activate this environment before launching the notebook (e.g. with jupyter-lab)
+
+2. Launch and run the script HMA_climate_trends_CRU.ipynb
+
+3. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and futur (2014-2020) periods with the GCM outputs (variable tas)
 
 You will need to change the names of some files/variables and to adapt the date corresponding to the new dataset.
 
