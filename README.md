@@ -19,12 +19,14 @@ This script allows to compute temperature trends in HMA. See the sections below 
 
 * A python environment file: environment.yml
 
-* A 2022 repository, that includes a binder session (not used in 2023)
+* The files needed to launch a binder session
 
 -----------------------------------------------------------------------
 
 Steps during the 13/12/2023 training:
 -------------------------------------
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/
 
 1. Copy the three datasets described below on your machine.
 
