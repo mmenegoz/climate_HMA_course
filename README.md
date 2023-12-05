@@ -110,10 +110,6 @@ Then, activate your environment. Some details about conda environments and pytho
 
 You need to have Anaconda or Minconda already pre-installed on your machine. For managing your conda environments always come back to the official documentation: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file.
 
-The package versions have not been set in the environment_2023.yml file. Be careful if you want to upgrade this environment, because there are often conflicts between some packages (e.g., version 0.6.4 of proplot does not work with version 3.3 of matplotlib, or cartopy does not work with the latest version 3.9 of python... but this can have already evolved at the time of this session). Be particularly careful with Proplot which is a package under development and which evolves very quickly, including changes of syntax, thus refer to version 0.6.4 for these practical works: https://proplot.readthedocs.io/en/v0.6.4/.
+The versions of the packages have not been specified in the environment.yml file. Be careful if you want to upgrade this environment, because there are often conflicts between some packages (e.g., version 0.6.4 of proplot does not work with version 3.3 of matplotlib, or cartopy does not work with the latest version 3.9 of python... but this can have already evolved at the time of this session).
 
-Some issues related with this environment:
-
-    Proplot colormaps: https://github.com/lukelbd/proplot/issues/123
-    Proplot colorbar: https://github.com/lukelbd/proplot/issues/124
 <!-- #endregion -->
