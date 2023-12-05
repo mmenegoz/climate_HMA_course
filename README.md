@@ -7,7 +7,7 @@ This folder contain the french course from Martin Ménégoz, about climate model
 
 You can download this repository by using the commande git clone https://github.com/mmenegoz/climate_HMA_course.git
 
-For the 2023 UGA master students, please use the branch binder_2023.
+For the 2023 UGA master students, please use the branch M2_climat_2023 (or you might want to test binder_2023).
 
 **General description of this github repository:**
 
