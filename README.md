@@ -21,36 +21,30 @@ This script allows to compute temperature trends in HMA. See the sections below 
 
 * A python environment file: environment.yml
 
-* The files needed to launch a binder session after downloading the data (postBuild and download_data.sh)
-
 -----------------------------------------------------------------------
 
 Steps during the 6/12/2023 training (M2 Students):
 --------------------------------------------------
 
-1. Create a jupyter notebook python session:
+1. Copy the three datasets described below on your machine.
 
-**Two options:**
+2. Create your python environment and activate this environment before launching the notebook (e.g. with jupyter-lab)
 
-**A.** A binder session with the data online:
+3. Launch and run the script HMA_climate_trends_CRU.ipynb
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/mmenegoz/climate_HMA_course/binder_2023)
-
-**B.** Run the script on your own machine:
-
-B1. Copy the three datasets described below on your machine.
-
-B2. Create your python environment and activate this environment before launching the notebook (e.g. with jupyter-lab)
-
-2. Launch and run the script HMA_climate_trends_CRU.ipynb
-
-3. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and futur (2014-2020) periods with the GCM outputs (variable tas)
+4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and futur (2014-2020) periods with the GCM outputs (variable tas)
 
 You will need to change the names of some files/variables and to adapt the date corresponding to the new dataset.
 
 -----------------------------------------------------------------------
 
-**Data (downloadable on the UGA cloud)**
+**Data (downloadable on the link below)**
+
+Download the folder[data_M2_climat.tar](https://filesender.renater.fr/download.php?token=26912690-290d-4cd1-b8bb-d817db1f98ab&files_ids=32107891) and untar/ungzip the files with the commands:
+
+	tar -xvf data_M2_climat.tar
+
+	gunzip data_M2_climat/*nc.gz
 
 The 3 datasets used in this training are :
 
@@ -62,17 +56,17 @@ Documentation and repositories related to these data are described below.
 
 *CRU temperature dataset*
 
-A subset of the data over HMA can be downloaded on the [UGA cloud climate repository](https://cloud.univ-grenoble-alpes.fr/apps/files/?dir=/2023_TU_winter_school/Data/05_climate/CRU&fileid=792557848) in the file HMA_cru_ts4.06.1901.2021.tmp.dat.nc
+A subset of the data over HMA can be found in the file HMA_cru_ts4.06.1901.2021.tmp.dat.nc
 
 The Origina data globally available can be downloaded at: https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz (October 2022)
 
 *Topography data (global data)*
 
-[UGA cloud dem GEMTED repository](https://cloud.univ-grenoble-alpes.fr/apps/files/?dir=/2023_TU_winter_school/Data/03_dem/GMTED2010&fileid=792549724), original data available at [GMTED2010](https://www.temis.nl/data/gmted2010/index.php) (December 2023)
+GMTED2010_15n060_0250deg.nc is a global dataset, the original data is available at [GMTED2010](https://www.temis.nl/data/gmted2010/index.php) (December 2023)
 
 *IPSL GCM experiments; temperature data (tas)*
 
-The IPSL-CM6A-LR model have been used to simulate the global climate system over 1850-2014 (historical experiment) and in future projections extended unntil 2100 and following different emission scenarios. The model is described in Boucher et al. (2020, available [online](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS002010)). Here, one subset extracted over HMA is available for the historical period and in one future projection available over 2014-20100 under the SSP2_45 scenario. For this short training, only one member is provided (r1i1p1f1), availablefor in two files for the two experiments on the [UGA cloud climate data IPSL repository](https://cloud.univ-grenoble-alpes.fr/apps/files/?dir=/2023_TU_winter_school/Data/05_climate/IPSL_r1i1p1f1&fileid=792576253):
+The IPSL-CM6A-LR model have been used to simulate the global climate system over 1850-2014 (historical experiment) and in future projections extended unntil 2100 and following different emission scenarios. The model is described in Boucher et al. (2020, available [online](https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2019MS002010)). Here, one subset extracted over HMA is available for the historical period and in one future projection available over 2014-20100 under the SSP2_45 scenario. For this short training, only one member is provided (r1i1p1f1), availablefor in two files for the two experiments:
 
 HMA_tas_Amon_IPSL-CM6A-LR_historical_r1i1p1f1_gr_185001-201412.nc
 
