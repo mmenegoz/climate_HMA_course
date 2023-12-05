@@ -17,7 +17,7 @@ You can download this repository by using the commande git clone https://github.
 
 This script allows to compute temperature trends in HMA. See the sections below to download the data, install your environment and run the script
 
-* A python environment file: environment_2023.yml
+* A python environment file: environment.yml
 
 * A 2022 repository, that includes a binder session (not used in 2023)
 
@@ -80,11 +80,11 @@ To check existing environments
 
 To install the environement on your machine, you can do it with:
 
-	mamba env create -f environment_2023.yml
+	mamba env create -f environment.yml
 
 or alternatively with
 
-	conda env create -f environment_2023.yml
+	conda env create -f environment.yml
 
 Then, activate your environment. Some details about conda environments and python packages used in this tutorial are described below.
 
