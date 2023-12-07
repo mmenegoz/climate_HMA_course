@@ -1,28 +1,17 @@
-
-
-name: HMA_env_2023
+# Install with `mamba env create -f environment.yml`
+name: winter_school
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - python
-  - xarray
-  - nc-time-axis
-  - proplot
-  - matplotlib
-  - cartopy
-  - isort
-  - esmpy
-  - black
-  - nbresuse # to see RAM
-  - nodejs[version='>=10.0'] # for jupyterlab
-  - python-graphviz # for dask visualization
-  - dask # for parallelization
-  - nb_conda_kernels # allow changing kernel in a notebook
-  - netcdf4
-  - scipy
-  - jupyterlab_code_formatter
-  - jupyterlab
   - jupyter
-  - h5netcdf
-  - tqdm # Progression bar in loops
+  - numpy
+  - matplotlib
+  - xarray
+  - scipy
+  - proplot
+  - cartopy
+  - netcdf4
+  - tqdm
+  - xdem
+  - jupytext

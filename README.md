@@ -7,19 +7,17 @@ This folder contain the french course from Martin Ménégoz, about climate model
 
 You can download this repository by using the commande git clone https://github.com/mmenegoz/climate_HMA_course.git
 
-**General description of this github repository:**
+**General description of the files available for this course**
 
-* This Readme.md file.
+* This README.md file descibing yhe content of the course as well as the steps of the training.
 
 * Document of the course: menegoz_climate_models_nepal_2023.pdf
 
-* A training script: HMA_climate_trends_CRU.ipynb
+* A training script: HMA_climate_trends_CRU.ipynb (with a *py version of the script)
 
-This script allows to compute temperature trends in HMA. See the sections below to download the data, install your environment and run the script
+This script allows to compute temperature trends in HMA. See the sections below to discover the data, install your python environment and run the script
 
-* A python environment file: environment.yml
-
-* A 2022 repository, that includes a binder session (not used in 2023)
+* A python environment file common with the other sessions: environment.yml
 
 -----------------------------------------------------------------------
 
@@ -28,17 +26,17 @@ Steps during the 13/12/2023 training:
 
 1. Copy the three datasets described below on your machine.
 
-2. Create your python environment (or use those that you got from the previous python sessions), and activate this environment before launching the notebook (e.g. with jupyter-lab)
+2. Create your python environment (or use those that you got from the previous python sessions), and activate this environment before launching the notebook (either with jupyter-notebook or jupyter-lab)
 
 3. Launch and run the script HMA_climate_trends_CRU.ipynb
 
-4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and futur (2014-2020) periods with the GCM outputs (variable tas)
+4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and futur (2014-2020) periods with the IPSL GCM outputs (variable tas)
 
 You will need to change the names of some files/variables and to adapt the date corresponding to the new dataset.
 
 -----------------------------------------------------------------------
 
-**Data (downloadable on the UGA cloud)**
+**Data**
 
 The 3 datasets used in this training are :
 
@@ -50,13 +48,13 @@ Documentation and repositories related to these data are described below.
 
 *CRU temperature dataset*
 
-A subset of the data over HMA can be downloaded on the [UGA cloud climate repository](https://cloud.univ-grenoble-alpes.fr/apps/files/?dir=/2023_TU_winter_school/Data/05_climate/CRU&fileid=792557848) in the file HMA_cru_ts4.06.1901.2021.tmp.dat.nc
+A subset of the CRU data over HMA is provided in the file HMA_cru_ts4.06.1901.2021.tmp.dat.nc
 
 The Origina data globally available can be downloaded at: https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz (October 2022)
 
 *Topography data (global data)*
 
-[UGA cloud dem GEMTED repository](https://cloud.univ-grenoble-alpes.fr/apps/files/?dir=/2023_TU_winter_school/Data/03_dem/GMTED2010&fileid=792549724), original data available at [GMTED2010](https://www.temis.nl/data/gmted2010/index.php) (December 2023)
+The file GMTED2010_15n060_0250deg.nc is a topography global dataset at 0.25° resolution. The original data is available at [GMTED2010](https://www.temis.nl/data/gmted2010/index.php) (December 2023)
 
 *IPSL GCM experiments; temperature data (tas)*
 
@@ -98,10 +96,6 @@ Then, activate your environment. Some details about conda environments and pytho
 
 You need to have Anaconda or Minconda already pre-installed on your machine. For managing your conda environments always come back to the official documentation: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file.
 
-The package versions have not been set in the environment_2023.yml file. Be careful if you want to upgrade this environment, because there are often conflicts between some packages (e.g., version 0.6.4 of proplot does not work with version 3.3 of matplotlib, or cartopy does not work with the latest version 3.9 of python... but this can have already evolved at the time of this session). Be particularly careful with Proplot which is a package under development and which evolves very quickly, including changes of syntax, thus refer to version 0.6.4 for these practical works: https://proplot.readthedocs.io/en/v0.6.4/.
+The package versions have not been set in the environment_2023.yml file. Be careful if you want to upgrade this environment, because you can get conflicts between some packages (e.g., version 0.6.4 of proplot does not work with version 3.3 of matplotlib, or cartopy does not work with the version 3.9 of python... but this can have already evolved at the time of this session). Be particularly careful with Proplot which is a package under development and which evolves very quickly, including changes of syntax, thus refer to version 0.6.4 for these practical works: https://proplot.readthedocs.io/en/v0.6.4/.
 
-Some issues related with this environment:
-
-    Proplot colormaps: https://github.com/lukelbd/proplot/issues/123
-    Proplot colorbar: https://github.com/lukelbd/proplot/issues/124
 <!-- #endregion -->
