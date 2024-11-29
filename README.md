@@ -58,7 +58,7 @@ Documentation and repositories related to these data are described below.
 
 A subset of the data over HMA can be found in the file HMA_cru_ts4.06.1901.2021.tmp.dat.nc
 
-The Origina data globally available can be downloaded at: https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz (October 2022)
+The Origina data globally available can be downloaded at: https://crudata.uea.ac.uk/cru/data/hrg/cru_ts_4.06/cruts.2205201912.v4.06/tmp/cru_ts4.06.1901.2021.tmp.dat.nc.gz (November 2024)
 
 *Topography data (global data)*
 
