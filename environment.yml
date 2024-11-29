@@ -1,6 +1,6 @@
 
 
-name: HMA_env_2023
+name: HMA_env_2024
 channels:
   - conda-forge
   - defaults

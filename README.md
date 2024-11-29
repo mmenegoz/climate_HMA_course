@@ -7,13 +7,13 @@ This folder contain the french course from Martin Ménégoz, about climate model
 
 You can download this repository by using the commande git clone https://github.com/mmenegoz/climate_HMA_course.git
 
-For the 2023 UGA master students, please use the branch M2_climat_2023 (or you might want to test binder_2023).
+For the 2024 UGA master students, please use the branch M2_climat_2024 (or you might want to test binder_2023).
 
 **General description of this github repository:**
 
 * This Readme.md file.
 
-* Document of the course: menegoz_climate_models_nepal_2023.pdf
+* Document of the course: menegoz_climate_change_mountains_2024.pdf
 
 * A training script: HMA_climate_trends_CRU.ipynb
 
@@ -23,7 +23,7 @@ This script allows to compute temperature trends in HMA. See the sections below 
 
 -----------------------------------------------------------------------
 
-Steps during the 6/12/2023 training (M2 Students):
+Steps during the 4/12/2024 training (M2 Students):
 --------------------------------------------------
 
 1. Copy the three datasets described below on your machine.
@@ -40,7 +40,7 @@ You will need to change the names of some files/variables and to adapt the date 
 
 **Data (downloadable on the link below)**
 
-Download the folder[data_M2_climat.tar](https://filesender.renater.fr/download.php?token=26912690-290d-4cd1-b8bb-d817db1f98ab&files_ids=32107891) and untar/ungzip the files with the commands:
+Download the folder[data_M2_climat.tar](https://filesender.renater.fr/?s=download&token=bc7887a9-1bc7-425f-ac12-d63c1d0fe433) and untar/ungzip the files with the commands:
 
 	tar -xvf data_M2_climat.tar
 
