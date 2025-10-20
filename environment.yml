@@ -1,6 +1,6 @@
 
 
-name: HMA_env_2024
+name: HMA_env_2025
 channels:
   - conda-forge
   - defaults
@@ -8,7 +8,6 @@ dependencies:
   - python
   - xarray
   - nc-time-axis
-  - proplot
   - matplotlib
   - cartopy
   - isort
@@ -26,3 +25,6 @@ dependencies:
   - jupyter
   - h5netcdf
   - tqdm # Progression bar in loops
+  # Optional: enhance plotting capabilities without ProPlot
+  - seaborn
+  - cmocean

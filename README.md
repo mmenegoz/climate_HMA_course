@@ -23,7 +23,7 @@ This script allows to compute temperature trends in HMA. See the sections below 
 
 -----------------------------------------------------------------------
 
-Steps during the 4/12/2024 training (M2 Students):
+Steps during the 3/12/2025 training (M2 Students):
 --------------------------------------------------
 
 1. Copy the three datasets described below on your machine.
