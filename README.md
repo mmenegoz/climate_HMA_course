@@ -32,7 +32,9 @@ Steps during the 3/12/2025 training (M2 Students):
 
 3. Launch and run the script HMA_climate_trends_CRU.ipynb
 
-4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and futur (2014-2020) periods with the GCM outputs (variable tas)
+4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and futur (2014-2020) periods with the GCM outputs (variable tas).
+
+5. Depending on your time, you can make other investigations: commputing the bias of the model with respect to the CRU dataset. Estimating the number of years that need to be considered to get a significant trend, and any question of interest.
 
 You will need to change the names of some files/variables and to adapt the date corresponding to the new dataset.
 
