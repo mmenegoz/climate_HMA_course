@@ -26,7 +26,7 @@ This script allows to compute temperature trends in HMA. See the sections below 
 Steps during the 3/12/2025 training (M2 Students):
 --------------------------------------------------
 
-1. Copy the three datasets described below on your machine.
+1. Read the documentation provided in this README.
 
 2. Create your python environment and activate this environment before launching the notebook (e.g. with jupyter-lab)
 
@@ -38,13 +38,11 @@ You will need to change the names of some files/variables and to adapt the date 
 
 -----------------------------------------------------------------------
 
-**Data (downloadable on the link below)**
+**Data **
 
-Download the folder[data_M2_climat.tar](https://filesender.renater.fr/?s=download&token=97180e32-43ce-40c1-a0e7-8ce972a93872) and untar/ungzip the files with the commands:
+The datasets used in this session are available on the google drive: https://drive.google.com/drive/u/0/folders/1a-vRa6IXqvsEfhGSg7nXInOQJSxAVLRF
 
-	tar -xvf data_M2_climat.tar
-
-	gunzip data_M2_climat/*nc.gz
+Sorry for using google that we should avoid for ethical reasons. The datasets are downloaded automatically in the notebook
 
 The 3 datasets used in this training are :
 
