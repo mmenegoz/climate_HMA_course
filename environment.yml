@@ -25,6 +25,7 @@ dependencies:
   - jupyter
   - h5netcdf
   - tqdm # Progression bar in loops
+  - gdwon # Downloading google drive data
   # Optional: enhance plotting capabilities without ProPlot
   - seaborn
   - cmocean
