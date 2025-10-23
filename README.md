@@ -7,13 +7,13 @@ This folder contain the french course from Martin Ménégoz, about climate model
 
 You can download this repository by using the commande git clone https://github.com/mmenegoz/climate_HMA_course.git
 
-For the 2024 UGA master students, please use the branch M2_climat_2024 (or you might want to test binder_2023).
+For the 2025 UGA master students, please use the branch M2_climat_2025.
 
 **General description of this github repository:**
 
 * This Readme.md file.
 
-* Document of the course: menegoz_climate_change_mountains_2024.pdf
+* Document of the course: menegoz_climate_change_mountains_2025.pdf
 
 * A training script: HMA_climate_trends_CRU.ipynb
 
@@ -100,7 +100,7 @@ Then, activate your environment. Some details about conda environments and pytho
 - [jupyter](https://jupyter.org/): for using jupyter-notebook / lab
 - [matplotlib](https://matplotlib.org/): back-end for making plots
 - [cartopy](https://scitools.org.uk/cartopy/docs/latest/): replace basemap, back-end for map projections
-- [proplot](https://proplot.readthedocs.io/en/stable/): a lightweight matplotlib wrapper for making beautiful, publication-quality graphics (still in development)
+- [proplot](https://proplot.readthedocs.io/en/stable/): NOT USED in the 2025 course (this package is not updated anymore) a lightweight matplotlib wrapper for making beautiful, publication-quality graphics (still in development)
 
 You need to have Anaconda or Minconda already pre-installed on your machine. For managing your conda environments always come back to the official documentation: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file.
 
