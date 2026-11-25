@@ -110,7 +110,9 @@ Then, activate your environment with:
 
 	conda activate HMA_env_2026
 
-Some details about conda environments and python packages used in this tutorial are described below.
+Some details about conda environments and python packages used in this tutorial are described below. Once you have activated your conda environment, you can launch your python notebook:
+
+	jupyter-lab
 
 *Python packages*
 
