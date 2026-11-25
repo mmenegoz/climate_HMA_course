@@ -3,17 +3,23 @@
 
 Computing climate trends of surface temperature in the Himalaya Mountain Area with observations and General Circulation Model (GCM) outputs over the last century and in future projections.
 
-This folder contain the french course from Martin Ménégoz, about climate modelling activities over mountainous areas, with a focus on High-Mountain Asia.
+This folder contain the french course from Martin Ménégoz, about climate models and modelling activities over mountainous areas, with a focus on High-Mountain Asia fro this practical session.
 
-You can download this repository by using the commande git clone https://github.com/mmenegoz/climate_HMA_course.git
+You can download this repository by using the git commands (https://git-scm.com/):
 
-For the 2025 UGA master students, please use the branch M2_climat_2025.
+Cloning the repository: **git clone https://github.com/mmenegoz/climate_HMA_course.git**
+
+For the 2026 UGA master students, please use the branch M2_climat_2026. You have to move to this branch by using the command:
+
+**git checkout M2_climat_2026**
+
+Check that you are in the correct branch: **git branch -a**
 
 **General description of this github repository:**
 
 * This Readme.md file.
 
-* Document of the course: menegoz_climate_change_mountains_2025.pdf
+* Documents of the course: menegoz_climate_models_M2_2026_first_part.pdf and menegoz_climate_models_M2_2026_part2_regional_mountains.pdf
 
 * A training script: HMA_climate_trends_CRU.ipynb
 
@@ -23,18 +29,20 @@ This script allows to compute temperature trends in HMA. See the sections below 
 
 -----------------------------------------------------------------------
 
-Steps during the 3/12/2025 training (M2 Students):
+Steps during the 2/12/2026 training (M2 Students):
 --------------------------------------------------
 
 1. Read the documentation provided in this README.
 
-2. Create your python environment and activate this environment before launching the notebook (e.g. with jupyter-lab)
+2. Clone the git project onto your computer and move to the 2026 branch.
 
-3. Launch and run the script HMA_climate_trends_CRU.ipynb
+3. Create your python environment and activate this environment before launching the notebook (e.g. with jupyter-lab)
 
-4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and futur (2014-2020) periods with the GCM outputs (variable tas).
+4. Launch and run the script HMA_climate_trends_CRU.ipynb
 
-5. Depending on your time, you can make other investigations: commputing the bias of the model with respect to the CRU dataset. Estimating the number of years that need to be considered to get a significant trend, and any question of interest.
+5. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and future (2014-2020) periods with the GCM outputs (variable tas).
+
+6. Depending on your time, you can make other investigations: commputing the bias of the model with respect to the CRU dataset. Estimating the number of years that need to be considered to get a significant trend, and any question of interest.
 
 You will need to change the names of some files/variables and to adapt the date corresponding to the new dataset.
 
