@@ -38,17 +38,17 @@ This script allows to compute temperature trends in HMA. See the sections below 
 Steps during the 2/12/2026 training (M2 Students):
 --------------------------------------------------
 
-0. Read the documentation provided in this README.
+Step 0. Read the documentation provided in this README.
 
-1. Clone the git project onto your computer and move to the 2026 branch (see previous section).
+Step 1. Clone the git project onto your computer and move to the 2026 branch (see previous section).
 
-2. Create your python environment and activate this environment before launching the notebook (e.g. with jupyter-lab, see the documentation described below for python, conda and jupyter explanations).
+Step 2. Create your python environment and activate this environment before launching the notebook (e.g. with jupyter-lab, see the documentation described below for python, conda and jupyter explanations).
 
-3. Launch and run the script HMA_climate_trends_CRU.ipynb
+Step 3. Launch and run the script HMA_climate_trends_CRU.ipynb
 
-4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and future (2014-2020) periods with the IPSL GCM outputs (variable tas).
+Step 4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and future (2014-2020) periods with the IPSL GCM outputs (variable tas).
 
-5. Depending on your time, you can make other investigations: (1) computing the bias of the model with respect to the CRU dataset; (2) computing the local bias as a function of the elevation; (3) Estimating the number of years that need to be considered to get a significant trend, and any question of interest.
+Step 5. Depending on your time, you can make other investigations: (1) computing the bias of the model with respect to the CRU dataset; (2) computing the local bias as a function of the elevation; (3) Estimating the number of years that need to be considered to get a significant trend, and any question of interest.
 
 You will need to change the names of some files/variables and to adapt the date corresponding to the new dataset.
 
