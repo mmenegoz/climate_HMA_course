@@ -5,6 +5,8 @@ Computing climate trends of surface temperature in the Himalaya Mountain Area wi
 
 This folder contain the french course from Martin Ménégoz, about climate models and modelling activities over mountainous areas, with a focus on High-Mountain Asia fro this practical session.
 
+**Step 1**
+
 You can download this repository by using the git commands (https://git-scm.com/):
 
 Cloning the repository: **git clone https://github.com/mmenegoz/climate_HMA_course.git**
@@ -32,17 +34,17 @@ This script allows to compute temperature trends in HMA. See the sections below 
 Steps during the 2/12/2026 training (M2 Students):
 --------------------------------------------------
 
-1. Read the documentation provided in this README.
+0. Read the documentation provided in this README.
 
-2. Clone the git project onto your computer and move to the 2026 branch.
+1. Clone the git project onto your computer and move to the 2026 branch (see previous section).
 
-3. Create your python environment and activate this environment before launching the notebook (e.g. with jupyter-lab)
+2. Create your python environment and activate this environment before launching the notebook (e.g. with jupyter-lab, see the documentation described below for python, conda and jupyter explanations).
 
-4. Launch and run the script HMA_climate_trends_CRU.ipynb
+3. Launch and run the script HMA_climate_trends_CRU.ipynb
 
-5. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and future (2014-2020) periods with the GCM outputs (variable tas).
+4. Make one or several copies of this script and adapt it/them yourself to compute temperature trend over historical (1850-2014) and future (2014-2020) periods with the IPSL GCM outputs (variable tas).
 
-6. Depending on your time, you can make other investigations: commputing the bias of the model with respect to the CRU dataset. Estimating the number of years that need to be considered to get a significant trend, and any question of interest.
+5. Depending on your time, you can make other investigations: (1) computing the bias of the model with respect to the CRU dataset; (2) computing the local bias as a function of the elevation; (3) Estimating the number of years that need to be considered to get a significant trend, and any question of interest.
 
 You will need to change the names of some files/variables and to adapt the date corresponding to the new dataset.
 
@@ -84,7 +86,7 @@ Please, consider that the original data is a 32-member ensemble experiment than 
 
 -----------------------------------------------------------------------
 
-**Python environment and main packages**
+**Python environment and main packages (Step 2)**
 
 *Commands*
 
@@ -92,7 +94,7 @@ To check existing environments
 
 	conda info --envs
 
-To install the environement on your machine, you can do it with:
+To install the environment on your machine, you can do it with:
 
 	mamba env create -f environment.yml
 
@@ -100,7 +102,11 @@ or alternatively with
 
 	conda env create -f environment.yml
 
-Then, activate your environment. Some details about conda environments and python packages used in this tutorial are described below.
+Then, activate your environment with:
+
+conda conda activate HMA_env_2026
+
+Some details about conda environments and python packages used in this tutorial are described below.
 
 *Python packages*
 
@@ -110,7 +116,7 @@ Then, activate your environment. Some details about conda environments and pytho
 - [cartopy](https://scitools.org.uk/cartopy/docs/latest/): replace basemap, back-end for map projections
 - [proplot](https://proplot.readthedocs.io/en/stable/): NOT USED in the 2025 course (this package is not updated anymore) a lightweight matplotlib wrapper for making beautiful, publication-quality graphics (still in development)
 
-You need to have Anaconda or Minconda already pre-installed on your machine. For managing your conda environments always come back to the official documentation: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file.
+You need to have Anaconda or Minconda already pre-installed on your machine. For managing your conda environments always come back to the official documentation: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file. Mamba is a similar tool as conda, but generally faster than conda to create environments.
 
 The versions of the packages have not been specified in the environment.yml file. Be careful if you want to upgrade this environment, because there are often conflicts between some packages (e.g., version 0.6.4 of proplot does not work with version 3.3 of matplotlib, or cartopy does not work with the latest version 3.9 of python... but this can have already evolved at the time of this session).
 
