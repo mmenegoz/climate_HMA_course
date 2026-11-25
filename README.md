@@ -92,6 +92,8 @@ Please, consider that the original data is a 32-member ensemble experiment than 
 
 **Python environment and main packages (Step 2)**
 
+To need to install conda and mamba packages on your machine before using them.
+
 *Commands*
 
 To check existing environments
