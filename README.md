@@ -9,13 +9,17 @@ This folder contain the french course from Martin Ménégoz, about climate model
 
 You can download this repository by using the git commands (https://git-scm.com/):
 
-Cloning the repository: **git clone https://github.com/mmenegoz/climate_HMA_course.git**
+Cloning the repository
+
+	git clone https://github.com/mmenegoz/climate_HMA_course.git
 
 For the 2026 UGA master students, please use the branch M2_climat_2026. You have to move to this branch by using the command:
 
-**git checkout M2_climat_2026**
+	git checkout M2_climat_2026
 
-Check that you are in the correct branch: **git branch -a**
+Check that you are in the correct branch:
+
+	git branch -a
 
 **General description of this github repository:**
 
@@ -104,7 +108,7 @@ or alternatively with
 
 Then, activate your environment with:
 
-conda conda activate HMA_env_2026
+	conda activate HMA_env_2026
 
 Some details about conda environments and python packages used in this tutorial are described below.
 
